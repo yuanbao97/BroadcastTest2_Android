@@ -9,7 +9,6 @@ public class AnotherBroadcastReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        String str = intent.getStringExtra("anotherExtra");
-        Toast.makeText(context, "AnotherBroadcastReceiver : " + str, Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "AnotherBroadcastReceiver : ", Toast.LENGTH_SHORT).show();
     }
 }
